@@ -10,14 +10,18 @@ jQuery(document).ready(function($) {
     const mobileMockup = $('#mobile-mockup');
 
     form.on('submit', function(e) {
-        e.preventDefault();
+        e.preventDefault(); // Prevent form submission
+        loadPreview();
+    });
+
+    function loadPreview() {
         let url = urlInput.val().trim();
         if (!url.startsWith('http://') && !url.startsWith('https://')) {
             url = 'https://' + url;
         }
         previewIframe.attr('src', url);
         previewIframeMobile.attr('src', url);
-    });
+    }
 
     desktopButton.on('click', function() {
         desktopMockup.show();
