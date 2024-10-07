@@ -1,0 +1,131 @@
+.website-preview-tool {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#url-form {
+    margin-bottom: 20px;
+}
+
+#url-input {
+    width: calc(100% - 100px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.device-buttons {
+    margin-bottom: 20px;
+}
+
+.device-buttons button {
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.device-buttons button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+#preview-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.device-mockup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+#desktop-mockup {
+    width: 80%;
+    height: 80%;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#desktop-mockup .screen {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#mobile-mockup {
+    width: 250px;
+    height: 500px;
+    background-color: #111;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+#mobile-mockup .screen {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@media (max-width: 600px) {
+    #url-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    #preview-container {
+        height: 400px;
+    }
+
+    #desktop-mockup {
+        width: 90%;
+        height: 90%;
+    }
+
+    #mobile-mockup {
+        width: 200px;
+        height: 400px;
+    }
+}
