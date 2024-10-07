@@ -6,7 +6,7 @@ Version: 1.0
 Author: Your Name
 */
 
-define('GITHUB_RAW_URL', 'https://raw.githubusercontent.com/yourusername/website-preview-tool/main/');
+define('GITHUB_RAW_URL', 'https://raw.githubusercontent.com/sha-rdz/wp_site_device_mockup_preview/main/');
 
 function website_preview_tool_enqueue_scripts() {
     $version = filemtime(__FILE__);
